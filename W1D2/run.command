@@ -1,0 +1,2 @@
+#!/bin/bash
+npx browser-sync start --server --files "*.html, js/*.js"
