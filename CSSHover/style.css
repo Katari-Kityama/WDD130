@@ -1,0 +1,36 @@
+body {
+    margin-left: 38%;
+    margin-right: 38%;
+    background-color: #57a1d4;
+    position: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h5 {
+    text-align: left;
+}
+
+img {
+    max-width: 60%;
+}
+
+h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h1:hover {
+    color: black;
+}
