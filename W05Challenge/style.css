@@ -1,17 +1,17 @@
 .background {
-    width: 100%;
+    width: 100%; 
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #737272;
+    margin: 0; 
+    padding: 0; 
+    background-color: #737272; 
 }
 
 .circleimg {
-    max-width: 22.5%;
-    border: 10px solid #444545;
-    border-radius: 50%;
-    margin: 4%;
-    position: center;
+    max-width: 22.5%; 
+    border: 10px solid #444545; 
+    border-radius: 50%; 
+    margin: 4%; 
+    position: center; 
 }
