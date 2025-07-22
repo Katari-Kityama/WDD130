@@ -1,0 +1,41 @@
+/*   Folly red: #fe334a */
+/*   Minty green: #20c1ae */
+
+body {
+    background-color: #000e0e;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.plannerbox {
+    background-color: #000e0e;
+    color: #20c1ae;
+    border: 2px solid #fe334a;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+
+    grid-column: 2/10;
+    grid-row: 2/5;
+}
+
+#logo_link {
+    display: inline-block;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
+}
+
+#kyv {
+    width: 25%;
+}

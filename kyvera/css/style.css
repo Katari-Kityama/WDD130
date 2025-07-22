@@ -1,0 +1,21 @@
+/* General styling for all pages. I will make more use of this later when my website is not so monolithic. */
+/*   Folly red: #fe334a */
+/*   Minty green: #20c1ae */
+
+html {
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #040a0a;
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;
+
+    color: #9bf1e7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}

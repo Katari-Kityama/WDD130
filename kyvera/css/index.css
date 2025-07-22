@@ -1,0 +1,252 @@
+#content {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    display: grid;
+    grid-template-columns: 60% 0.1% 40%;
+    grid-template-rows: auto 80% auto;
+}
+
+.upperleft {
+    padding: 0px;
+    grid-column: 1;
+    grid-row: 1;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.upperright {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.left {
+    padding: 2.5% 5% 12.5% 5%;
+    grid-column: 1;
+    grid-row: 2;
+    height: auto;
+    width: auto;
+
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #20c1ae transparent; 
+}
+
+.divider {
+    width: 100%;
+    background-color: #20c1ae;
+    margin: 0;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.right {
+    padding: 0px 20px 0px 20px;
+    grid-column: 3;
+    grid-row: 2;
+    height: 100%;
+    width: auto;
+    float: right;
+
+    align-items: center;
+    text-align: center;
+}
+
+.kyvera_container {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kyvera_image {
+    height: 100%;
+}
+
+#detectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.kyvera_image_button:hover {
+    border: 1px solid #20c1ae;
+}
+
+#head {
+    grid-column: 5/11;
+    grid-row: 3/9;
+}
+
+#paw_r {
+    grid-column: 5/9;
+    grid-row: 25/28;
+}
+
+#paw_l {
+    grid-column: 12/16;
+    grid-row: 26/30;
+}
+
+#chest {
+    grid-column: 5/10;
+    grid-row: 9/14;
+}
+
+#leg_r {
+    grid-column: 5/10;
+    grid-row: 18/25;
+}
+
+#leg_l {
+    grid-column: 9/15;
+    grid-row: 17/27;
+}
+
+#tail {
+    grid-column: 9/18;
+    grid-row: 11/18;
+}
+
+#hip {
+    grid-column: 6/12;
+    grid-row: 14/19;
+}
+
+#hand_r {
+    grid-column: 4/7;
+    grid-row: 17/20;
+}
+
+#hand_l {
+    grid-column: 16/20;
+    grid-row: 8/11;
+}
+
+#tail_tip {
+    grid-column: 17/20;
+    grid-row: 14/17;
+}
+
+.bottomright{
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+}
+
+/* Keeps the image where I want it for weird aspect ratios */
+@media (max-aspect-ratio: 13/9) {
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    .kyvera_container {
+        height: auto;
+        width: 100%;
+    }
+
+    #kyvera_image {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Phone CSS */
+@media screen and (max-aspect-ratio: 11/10) {
+    #content {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0fr 70% 5% 0.1% 80% 10%;
+    }
+
+    .upperright {
+        padding: 0px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .left {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .divider {
+        grid-column: 1;
+        grid-row: 5;
+
+    }
+
+    .right {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .kyvera_container {
+        height: 100%;
+        width: auto;
+    }
+
+    #kyvera_image {
+        height: 100%;
+        width: auto;
+    }
+
+    .bottomright{
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+    }
+}
+
+/* Skinny phone CSS */
+@media screen and (max-aspect-ratio: 10/19) {
+    .kyvera_container {
+        height: auto;
+        width: 100%;
+    }
+
+    #kyvera_image {
+        height: auto;
+        width: 100%;
+    }
+}
