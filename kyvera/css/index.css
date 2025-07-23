@@ -42,9 +42,27 @@ p {
 }
 
 .upperright {
-    padding: 10px;
+    padding: 0px;
     grid-column: 3;
     grid-row: 1;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+a {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #9bf1e7;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 1px solid #20c1ae;
 }
 
 .left {

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katari Kityama</title>
+
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Katari Kityama">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body> 
+    <div id="content">
+
+        <div class="upperleft"> 
+            <h1>ABOUT THE CREATOR</h1>
+        </div>
+
+        <div class="upperright"> 
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../html/kenaria.html">Kenaria</a>
+                <a href="../html/about.html">About</a>
+            </nav>
+        </div>
+
+        <div class="left" id="kyvera_anatomy_lore"> 
+            <h2>Katari Kityama</h2>
+            <p>Katari Kityama here, I'm the creator of the kyvera species. In 2022 during my high school years, I created the kyvera over biology classwork with a simple sketch. My friend chose the color folly pink and that is how the species started.</p>
+            <br>
+            <p>The original sketch was meant to look like a chinchilla, but it looked nothing like that which is probably for the best. Modern kyvera look nothing like rodents and are some mix between mammals and reptiles.</p>
+            <br>
+            <p>I drew the species quite frequently and due to my quickly improving art skills among other factors I gained popularity and started growing a community around the species.</p>
+            <br>
+            <p>Unfortunately, I have since let the project die despite still occasionally drawing my beloved kyvera. You can view some of these drawings on the right.</p>
+        </div> 
+
+        <div class="divider"></div>
+        
+        <div class="right">
+            <div class="kyvera_container">
+                <!-- Slideshow code from w3schools -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="../images/kyv.png" style="width:100%">
+                        <div class="text">1/14 | Full Color Minty | 2023</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/kyv1.jpg" style="width:100%">
+                        <div class="text">2/14 | Detailed Kat sketch | 2025</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/kyv2.jpg" style="width:80%">
+                        <div class="text">3/14 | Unnamed exotic kyvera | 2025</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv3.png" style="width:100%">
+                        <div class="text">4/14 | Kat with a hoodie | 2025</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv4.png" style="width:100%">
+                        <div class="text">5/14 | Quick digital kyvera sketch | 2024</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv5.png" style="width:100%">
+                        <div class="text">6/14 | Kyvera OC | 2024</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv6.gif" style="width:100%">
+                        <div class="text">7/14 | Kat judges you | 2024</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv7.jpg" style="width:100%">
+                        <div class="text">8/14 | Kyvera throwing feather spear | 2024</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="../images/kyv8.jpg" style="width:80%">
+                        <div class="text">9/14 | Cyberpunk kyvera | 2023</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv9.png" style="width:100%">
+                        <div class="text">10/14 | Satori kyvera OC | 2023</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv10.png" style="width:100%">
+                        <div class="text">11/14 | Minty sunbath | 2023</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv11.png" style="width:100%">
+                        <div class="text">12/14 | Kyvera standing on tail | 2023</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv12.png" style="width:100%">
+                        <div class="text">13/14 | Minty and Kat sitting | 2023</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../images/kyv13.png" style="width:100%">
+                        <div class="text">14/14 | Cute Minty and Kat | 2023</div>
+                    </div>
+                    
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="bottomright">
+            <div>Kyvera art gallery | Images by Katari Kityama</div>
+        </div>
+
+    </div>
+    <footer></footer>
+    <script src="javascript/script.js"></script>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

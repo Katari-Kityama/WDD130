@@ -1,0 +1,14 @@
+#planet_image {
+    width: 100%
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.kyvera_container {
+    height: auto;
+    width: 100%;
+}
